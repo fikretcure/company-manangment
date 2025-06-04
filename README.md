@@ -22,5 +22,6 @@ php artisan optimize:clear
 php artisan serve --port=8085
 ```
 
-3. Giris bilgileriniz `gcode@green.com` &&  `Green2025!`
-4. Proje başarıyla başlatıldığında http://127.0.0.1:8085 adresinden erişebilirsiniz.
+3. Giris Email Bilgisi `.env` dosyasindan degistirilebilir : `gcode@green.com`
+4. Tüm kullanıcıların şifresi : `Green2025!`
+5. Proje başarıyla başlatıldığında http://127.0.0.1:8085 adresinden erişebilirsiniz.
