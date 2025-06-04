@@ -28,7 +28,8 @@ class StoreCompanyRequest extends FormRequest
             'title' => [
                 'required',
                 'string',
-                Rule::unique(Company::class)
+                Rule::unique(Company::class),
+                'max:255'
             ],
             'phone' => [
                 'required',
@@ -40,11 +41,13 @@ class StoreCompanyRequest extends FormRequest
                 'required',
                 'string',
                 'email',
-                Rule::unique(Company::class)
+                Rule::unique(Company::class),
+                'max:255'
             ],
             'full_address' => [
                 'required',
                 'string',
+                'max:255'
             ],
         ];
     }

@@ -28,7 +28,8 @@ class UpdateCompanyRequest extends FormRequest
             'title' => [
                 'required',
                 'string',
-                Rule::unique(Company::class)->ignore($this->company)
+                Rule::unique(Company::class)->ignore($this->company),
+                'max:255'
             ],
             'phone' => [
                 'required',
@@ -40,11 +41,13 @@ class UpdateCompanyRequest extends FormRequest
                 'required',
                 'string',
                 'email',
-                Rule::unique(Company::class)->ignore($this->company)
+                Rule::unique(Company::class)->ignore($this->company),
+                'max:255'
             ],
             'full_address' => [
                 'required',
                 'string',
+                'max:255'
             ],
         ];
     }
