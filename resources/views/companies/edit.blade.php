@@ -1,5 +1,5 @@
 @extends('layout')
-@section('title', 'Müşteri Düzenleme')
+@section('title', $company->title .' | Müşteri Düzenleme')
 @section('breadcrumb')
     <div class="row align-items-center">
         <div class="col-md-12">
