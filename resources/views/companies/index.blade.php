@@ -57,6 +57,7 @@
             searching: false,
             ordering: false,
             ajax: '{{ route('companies.index') }}',
+            lengthMenu: [ [10, 20, 30, 50, 100], [10, 20, 30, 50, 100] ],
             columns: [
                 { data: 'reg_no', title: 'Kayıt No' },
                 { data: 'title', title: 'Ünvan' },
