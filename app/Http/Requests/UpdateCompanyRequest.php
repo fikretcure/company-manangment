@@ -48,4 +48,14 @@ class UpdateCompanyRequest extends FormRequest
             ],
         ];
     }
+
+    public function attributes(): array
+    {
+        return [
+            'title' => 'Müşteri adı',
+            'phone' => 'Telefon numarası',
+            'email' => 'E-mail adresi',
+            'full_address' => 'Adres',
+        ];
+    }
 }
