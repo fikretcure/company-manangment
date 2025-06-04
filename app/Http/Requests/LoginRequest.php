@@ -37,5 +37,11 @@ class LoginRequest extends FormRequest
         ];
     }
 
-
+    public function attributes(): array
+    {
+        return [
+            'email' => 'E-mail adresi',
+            'password' => 'Şifre',
+        ];
+    }
 }
