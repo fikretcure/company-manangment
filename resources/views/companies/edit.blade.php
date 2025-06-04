@@ -43,7 +43,7 @@
                             <label for="phone" class="form-label">Telefon</label>
                             <input type="number" value="{{ old('phone', $company->phone) }}" name="phone" id="phone"
                                    class="form-control"
-                                   placeholder="Sabit telefon">
+                                   placeholder="Telefon">
                             @error('phone')
                             <div class="error-message">{{ $message }}</div>
                             @enderror
